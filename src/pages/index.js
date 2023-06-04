@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Button from '../components/Button';
-import { calcularTotalPagar } from '../utils';
+import { calcularTotalPagar } from '../utils/function';
 
 const MIN = 0;
 const MAX = 20000;
