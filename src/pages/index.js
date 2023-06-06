@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import { calcularTotalPagar } from '../utils/function';
+import swal from 'sweetalert';
 
 const MIN = 0;
 const MAX = 20000;
@@ -30,7 +31,11 @@ const IndexPage = () => {
   const handleChangeDecremento = () => {
     const valor = cantidad - STEP;
     if (valor < MIN) {
-      alert('Cantidad no válida!');
+      swal({
+        title: "ERROR",
+        text: "Cantidad no valida!",
+        icon: "error",
+      });
       return;
     }
     setCantidad(valor);
@@ -39,7 +44,11 @@ const IndexPage = () => {
   const handleChangeIncremento = () => {
     const valor = cantidad + STEP;
     if (valor > MAX) {
-      alert('Cantidad no válida!');
+      swal({
+        title: "ERROR",
+        text: "Cantidad no valida!",
+        icon: "error",
+      });
       return;
     }
     setCantidad(valor);
