@@ -35,7 +35,7 @@ const IndexPage = () => {
         title: "ERROR",
         text: "Cantidad no valida!",
         icon: "error",
-        button: false,
+        buttons: false,
         timer: 3000,
       });
       return;
@@ -50,7 +50,7 @@ const IndexPage = () => {
         title: "ERROR",
         text: "Cantidad no valida!",
         icon: "error",
-        button: false,
+        buttons: false,
         timer: 3000,
       });
       return;
